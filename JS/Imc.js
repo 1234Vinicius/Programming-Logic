@@ -28,7 +28,7 @@ function calculeImc(altura, peso) {
 
 }
 
-   var nome = prompt("Informe o seu nome");
+   var nome = prompt(nome + ", Informe o seu nome");
    var alturaInformada = prompt(nome + ", Informe a sua altura");
    var pesoInformado = prompt (nome + ", Informe o seu peso");
 

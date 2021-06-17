@@ -1,45 +1,42 @@
-<Meta charset="UTF-8">
+<meta charset="UTF-8">
 
 
 <script>
-	
-   function pulelinha() {
-
-
-   	document.write("<br>");
-   	document.write("<br>");
-
-   }
-
-
-   function mostra(frase) {
-
-   	document.write(frase);
-   	pulelinha();
-
-
-   }
-
-function calculeImc(altura, peso) {
-
-   return  peso / (altura * altura);
    
+
+function  pulaLinha() {
+
+   document.write("<br>");
+   document.write("<br>");
 
 
 }
 
-   var nome = prompt("Informe o seu nome");
-   var alturaInformada = prompt(nome + ", Informe a sua altura");
-   var pesoInformado = prompt (nome + ", Informe o seu peso");
 
-   var imc = calculeImc  (alturaInformada, pesoInformado);
+function mostra(frase) {
+
+   document.write(frase);
+   pulaLinha();
 
 
-   document.write(nome + " ,O IMC calculado é " + imc);
+}
 
- 
+function calculeImc(altura, peso) {
 
-   
+   return peso / (altura * altura);
+
+
+}
+
+
+var nome = prompt("Entre com seu nome. ");
+var alturaInformada = prompt(nome + ", Qual é a sua altura ");
+var pesoInformado = prompt(nome + ", Qual é o seu peso ");
+
+var imc = calculeImc (alturaInformada, pesoInformado);
+
+mostra(nome + " , O IMC calculado é " + imc)
+
 
 
 
