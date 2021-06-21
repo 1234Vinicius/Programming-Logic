@@ -3,17 +3,27 @@
 
 <script>
 
+function pulaLinha() {
+
+    document.write("<br>");
+    document.write("<br>");
+}
+
+function mostra(frase) {
+
+    document.write(frase);
+    pulaLinha();
+}
+
+var numeroUm = 30;
+var numero = 10;
+var  totalNumeros = numeroUm + numero;
+
+
+
+mostra("O valor da soma é " + totalNumeros);
 
 
 
 
-var user = new Object();
-user.first = "Fred";
-user.last = "Smith";
-
-console.log(user.first, user.last);
-// Output:
-// Fred Smith
-// 
-// 
 </script>
