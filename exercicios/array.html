@@ -1,16 +1,17 @@
-<Meta charset="UTF-8">
+<meta chartes="UTF-8">
 
 <script>
+var listaDeFrutas = ["Uva", "Banana", "Manga", "Cajá", "Pinha"];
+var busca = "Cajá";
+var encontrado = false;
 
-var frutas = ["Banana, maçã, uva, abacate, larana, pera, morango, goiaba, abacaxi"];
+for (var i = 0; i < listaDeFrutas.length; i++) { // Você deverá criar um loop...
+  if (listaDeFrutas[i] === busca) { // ...que verifique se a fruta contida na variável busca existe na lista de frutas do sacolão.
+    encontrado = true;
+  }
+}
 
-
-var frutas = ["Carro"];
-frutas [0];
-
-
-
-mostra("O numero " + frutas);
-
-
+if (encontrado) { // Se existe...
+  console.log(`Sim, temos a fruta ${busca} disponível`); // ...basta exibir uma mensagem. Use a variável busca para exibir o nome da fruta nessa mensagem de forma dinâmica.
+}
 </script>
